@@ -1,0 +1,427 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon.png"/>
+	<meta name="author" content="sefia" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<link rel="apple-touch-startup-image" href="../images/startup.png" />	            
+	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+	<title>sefia</title> 
+
+	<link rel="stylesheet" href="css/style.css" />
+			
+	<script type="text/javascript" src="js/jQM-Inheritance-Animate-Photoswipe_v3.js"></script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27132758-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();    
+    jQuery(window).load(function() {
+      jQuery('div[data-role=navbar] li a').bind('click', function(){
+          jQuery(this).attr("onclick", "_gaq.push(['_trackEvent', 'anchor', 'click', '" + jQuery(this).attr('href') + "']);" );
+      });
+    });
+  </script>
+</head> 
+<body class="debug_OFF"> 
+
+<!-- Home page -->
+
+<div data-role="page" id="Home">
+
+	<header data-role="header" class="hstandard">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home" class="ui-btn-active ui-state-persist">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<header data-role="header" class="htiny">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home" class="ui-btn-active ui-state-persist">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<div data-role="content">
+
+		<header class="creset" style="margin-top:10px;">
+			<hgroup class="creset">
+				<h1 class="ctxt" style="letter-spacing:-4px">sefia</h1>
+				<h1 class="ff" style="font-size: 26px;">CONSULTING</h1>
+			</hgroup>
+		</header>
+			
+		<div class="wrapper" style="margin-bottom:0px;">
+			<section id="s1">      
+        <header class="tagline" style="text-align:center;">
+            <h1 style="background:url(css/images/bg-h1.png) no-repeat left top;padding-left:50px;margin:auto;width:200px;margin-bottom:0px;padding-bottom:0;font-size:50px;font-family: 'MuseoSlab700', serif;text-align:left">CUSTOM
+                <br/>
+                S/W
+                <br/>
+                DEV
+            </h1>
+            <h2 style="margin-left:auto;margin-right:auto; width:200px;margin-top:-20px;padding-left:54px;text-align:left">
+                <span style="font-size: 15px;text-shadow:0 1px 0 #000;color:#FFF">web . mobile . enterprise .</span>
+            </h2>
+        </header>
+ 			</section>
+			<section id="s3">
+				<div class="bwrapper">
+					<a href="#Portfolio" data-role="button" data-theme="b" class="pf">checkout projects</a>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer" style="margin-top:-50px; margin-bottom:-60px">
+			<h3 class="hfoot" style="font-size:12px;text-align:center">&copy; sefia CONSULTING 2012</h3>
+			
+		</footer>			
+	</div>
+
+</div>
+
+<!-- About page -->
+
+<div data-role="page" id="About">
+
+	<header data-role="header" class="hstandard">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About" class="ui-btn-active ui-state-persist">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<header data-role="header" class="htiny">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About" class="ui-btn-active ui-state-persist">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<div data-role="content">
+		<header class="creset" style="margin-top:0px;margin-bottom:0px">
+			<hgroup class="creset">
+				<h1 class="ffc">about.</h1>
+				<h4 class="sndline" style="margin-top:-20px;margin-left:34px">us.</h4>
+			</hgroup>	
+		</header>
+
+		<div class="wrapper">
+			<section id="s4">
+				<!--h3 class="secthead">about</h3-->
+				<p class="drop" style="background:url(../images/seb-bg.png) center center no-repeat;">software solutions without the expense, headache and geekiness of a dedicated IT staff
+       	or the restrictions of off-the-shelf applications.</p>
+       	<p class="drop" style="background:url(../images/em-bg.png) center center no-repeat;">
+           experience super awesome designers and developers who combine best practices, agile methodologies, and the latest cutting-edge technologies 
+             to realize your vision. The resulting software is better than you imagined and customized 
+         	to fit into your environment, whether it's a multi-site enterprise, an Internet cloud, or an iPhone.
+        </p>
+			</section>
+			
+			<section id="s5">
+				<!--h3 class="secthead">team</h3-->
+				<p class="drop" style="background:url(../images/finn-bg.png) center center no-repeat;">fundamentally our project teams are lean, responsive, and bad-ass. No bloated head-counts. No meaningless
+      	meetings or fluffy documents.
+      	We deliver working software quickly and efficiently.</p>
+        <p class="drop" style="background:url(../images/isaac-bg.png) center center no-repeat;">
+          imagination and intelligence are key as our team of thinkers and doers find creative, cost-effective
+          solutions to your biggest challenges. 
+        </p>
+         <p class="drop" style="background:url(../images/alyssa-bg.png) center center no-repeat;">  
+          act now. Don't waste time and money
+         	figuring out how to bring your product to life. We already know how.
+           
+        </p>
+			</section>			
+			
+ 	
+		</div>
+		
+		<footer id="footer">
+			<h3 class="hfoot" style="font-size:12px;text-align:center">&copy; sefia CONSULTING 2012</h3>
+			
+		</footer>			
+	</div>
+
+	<footer data-role="footer" class="hstandard fhide">
+		<div class="hlt"> </div>
+		<div data-role="navbar">
+			<ul>
+
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About" class="ui-btn-active ui-state-persist">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<footer data-role="footer" class="htiny">
+		<div class="hlt"> </div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About" class="ui-btn-active ui-state-persist">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Portfolio -->
+
+<div data-role="page" id="Portfolio" class="gallery-page">
+
+	<header data-role="header" class="hstandard">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio" class="ui-btn-active ui-state-persist">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<header data-role="header" class="htiny">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio" class="ui-btn-active ui-state-persist">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<div data-role="content">	
+		<header class="creset" style="margin-top:-25px;margin-bottom:20px">
+			<hgroup class="creset">
+				<h1 class="ffc">projects.</h1>
+				<h4 class="sndline" style="margin-top:-20px;margin-left:34px">and stuff.</h4>
+			</hgroup>	
+		</header>
+		<div class="gallery">
+			<ul class="th_grid">
+				<li class="gallery-item">
+				  <a href="../images/projects/pdi-screen1.png" rel="external"><img src="../images/projects/pdi-thumb-square.png" /></a>
+  				<a href="../images/projects/pdi-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen5.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen6.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen7.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen8.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/pdi-screen9.png" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+				  <a href="../images/projects/od-screen1.png" rel="external"><img src="../images/projects/od-thumb-square.png" /></a>
+  				<a href="../images/projects/od-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/od-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/od-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/od-screen5.png" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+				  <a href="../images/projects/san-screen1.png" rel="external"><img src="../images/projects/san-thumb-square.png" /></a>
+  				<a href="../images/projects/san-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen5.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen6.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen7.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen8.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/san-screen9.png" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+				  <a href="../images/projects/vp-screen1.png" rel="external"><img src="../images/projects/vp-thumb-square.png" /></a>
+  				<a href="../images/projects/vp-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/vp-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/vp-screen4.png" rel="external" style="display:none"></a>  
+				</li>
+
+				<li class="gallery-item">
+  				<a href="../images/projects/med-screen3.png" rel="external"><img src="../images/projects/med-thumb-square.png" /></a>
+  				<a href="../images/projects/med-screen1.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/med-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/med-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/med-screen5.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/med-screen6.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/med-screen7.png" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+  				<a href="../images/projects/blerp-screen3.png" rel="external"><img src="../images/projects/blerp-thumb-square.png" /></a>
+  				<a href="../images/projects/blerp-screen1.jpg" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/blerp-screen2.jpg" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/blerp-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/blerp-screen5.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/blerp-screen6.jpg" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+				  <a href="../images/projects/dpp-screen1.png" rel="external"><img src="../images/projects/dpp-thumb-square.png" /></a>
+  				<a href="../images/projects/dpp-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/dpp-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/dpp-screen4.png" rel="external" style="display:none"></a>  
+				</li>                                                                                    
+				<li class="gallery-item">
+				  <a href="../images/projects/flt-screen1.png" rel="external"><img src="../images/projects/flt-thumb-square.png" /></a>
+  				<a href="../images/projects/flt-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/flt-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/flt-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/flt-screen5.png" rel="external" style="display:none"></a>  
+				</li>
+				<li class="gallery-item">
+				  <a href="../images/projects/edi-screen1.png" rel="external"><img src="../images/projects/edi-thumb-square.png" /></a>
+  				<a href="../images/projects/edi-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/edi-screen3.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/edi-screen4.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/edi-screen5.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/edi-screen6.png" rel="external" style="display:none"></a>  
+				</li>
+				
+				<li class="gallery-item">
+				  <a href="../images/projects/back-screen1.png" rel="external"><img src="../images/projects/back-thumb-square.png" /></a>
+  				<a href="../images/projects/back-screen2.png" rel="external" style="display:none"></a>  
+				 </li>
+ 				<li class="gallery-item">
+ 				  <a href="../images/projects/iso-screen1.png" rel="external"><img src="../images/projects/iso-thumb-square.png" /></a>
+  				<a href="../images/projects/iso-screen2.png" rel="external" style="display:none"></a>  
+  				<a href="../images/projects/iso-screen3.png" rel="external" style="display:none"></a>  
+ 				 </li>
+			</ul>
+  		<footer id="footer">
+  			<h3 class="hfoot" style="font-size:12px;text-align:center">&copy; sefia CONSULTING 2012</h3>
+
+  		</footer>			
+				
+		</div>		
+	</div>
+
+	<footer data-role="footer" class="hstandard fhide">
+		<div class="hlt"> </div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio" class="ui-btn-active ui-state-persist">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<footer data-role="footer" class="htiny">
+		<div class="hlt"> </div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio" class="ui-btn-active ui-state-persist">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact">contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+
+
+<!-- Contact page -->
+
+<div data-role="page" id="Contact" style="background: url(css/images/bg-footer.gif) repeat !important;">
+
+	<header data-role="header" class="hstandard">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact" class="ui-btn-active ui-state-persist">contact</a></li>
+
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+
+	<header data-role="header" class="htiny" >
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Home">home</a></li>
+				<li><a href="#Portfolio">projects</a></li>
+				<li><a href="#About">about</a></li>
+				<li><a href="#Contact" class="ui-btn-active ui-state-persist">contact</a></li>
+			</ul>
+		</div>
+		<div class="hlb"> </div>
+	</header>
+	
+	<div data-role="content">
+	
+		<header class="creset">
+			<hgroup class="creset">
+				<h1 class="ffc">contact us.</h1>
+				<h4 class="sndline" style="margin-top:-20px;margin-left:47px">if you want.</h4>
+			</hgroup>	
+		</header>
+
+		<div id="contact-block">
+			<form name="contactform" method="post" id="myform">
+				<div id="result"></div>
+
+				<div data-role="fieldcontain" style="border:0">
+					<label for="msg">message :</label>
+					<textarea cols="40" rows="8" name="msg" id="msg"></textarea>
+				</div>
+				<div data-role="fieldcontain" style="border:0">
+					<label for="name">name :</label>
+					<input type="text" name="name" id="name" value=""  />
+				</div>
+				<div data-role="fieldcontain" style="border:0">
+					<label for="email">email :</label>
+					<input type="text" name="email" id="email" value=""  />
+				</div>
+				<div data-role="fieldcontain" class="formbutton" style="border:0">
+					<input type="hidden" name="browser_check" value="false" />
+					<button value="submit-value" type="submit" id="mysubmit" data-theme="b" class="ui-btn-hidden" aria-disabled="false">send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+<!-- Localized -->
