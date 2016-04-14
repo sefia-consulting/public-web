@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,20 +54,13 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+      $(function() {
+      	var hash = window.location.hash;
+      	if (hash) hash = hash.substring(1);
+      	if (hash == 'success') $('.success').show();
+      });
+
     </script>
-	<!-- formIQ Page View Tracking script -->
-	<script type="text/javascript">
-	    fiqid = 156800;
-	    document.write(unescape("%3Cscript src='" + document.location.protocol + "//code.form-iq.com/pageview.min.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>	
-	<!-- formIQ Form Tracking script -->
-	<script type="text/javascript">
-	    fiqid = 156800;
-	    document.write(unescape("%3Cscript src='" + document.location.protocol + "//code.form-iq.com/FormLoad.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	    document.write(unescape("%3Cscript src='" + document.location.protocol + "//code.form-iq.com/FormIQ.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
 </head>
 <body class="linen">
 	
@@ -115,9 +109,9 @@
 						<!--li class="google"><a href="">Google</a></li-->
 						<!--li class="flickr"><a href="">Flickr</a></li-->
 						<li class="email"><a href="mailto:info@sefiaconsulting.com" title="info@sefiaconsulting.com">Email</a></li>
-						<li class="blog"><a href="http://sefiaconsulting.blogspot.com/" target="_new" title="Blog">Blog</a></li>
+						<!--li class="blog"><a href="http://sefiaconsulting.blogspot.com/" target="_new" title="Blog">Blog</a></li>
 						<li class="rss"><a href="feed:https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=sefiaconsulting" title="RSS" target="_new">RSS</a></li>
-						<li class="clients"><a href="http://projects.sefiaconsulting.com" target="_new" title="Clients">Clients</a></li>
+						<li class="clients"><a href="http://projects.sefiaconsulting.com" target="_new" title="Clients">Clients</a></li-->
 					</ul>
 				</aside>
 				<!-- End Social Icons -->
@@ -248,12 +242,12 @@
 					
 					<!-- Start Tweets -->
 					<div class="box tweets">
-						<span class="icon social"><a href="http://twitter.com">e</a></span>
-						<div class="flexslider-container">
+						<!--span class="icon social"><a href="http://twitter.com">e</a></span-->
+						<!--div class="flexslider-container">
 							<div id="twitter_stream" class="flexslider">
 								
 							</div>
-						</div>
+						</div-->
 					</div>
 					<!-- End Tweets -->
 					
@@ -463,9 +457,13 @@
 						<li class="current">
 							<a href="javascript:;" data-testimonial="I'm still not clear on why I needed an advanced degree" data-author="Alan"><img src="images/content/pa.png" alt="" /></a>
 						</li>
-						<li class="current">
+						<!--li class="current">
 							<a href="javascript:;" data-testimonial="The first 5 days after the weekend are the hardest" data-author="Gen"><img src="images/content/gen.png" alt="" /></a>
-						</li>
+						</li-->
+                                                <li class="current">
+                                                        <a href="javascript:;" data-testimonial="I'm too cool for work-related activities" data-author="Dennis"><img src="images/content/il.png" alt="" /></a>
+                                                </li>
+
 						<li class="current">
 							<a href="javascript:;" data-testimonial="You're rubber. I'm the glue." data-author="Cory"><img src="images/content/cory.png" alt="" /></a>
 						</li>
@@ -504,24 +502,11 @@
 					
 					<!-- Start Contact Form -->
 					<div id="contact_form">
-						<div class="validation">
-							<p>Oops! Please correct the highlighted fields...</p>
-						</div>
-	
-						<div class="success">
+						<div class="success" id="success">
 							<p>Thanks! I'll get back to you shortly.</p>
 						</div>
 						
-						<!--form enctype="multipart/form-data" method="post" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8" name="contact_form"-->
-						<form enctype="multipart/form-data" method="post" action="http://www.mail-maniac.com" accept-charset="UTF-8" name="contact_form">
-							<input type="hidden" name="acctid" id="acctid" value="0pt12o32lljutmmk" />
-							<input type="hidden" name="formid" id="formid" value="1114939" />
-							<input type="hidden" name="required_vars" id="required_vars" value="name,email" />
-							<input name = "userid" type="hidden" value = "sefiaconsulting">
-							<input type = "hidden" name = "mailto" value = "info(at)sefiaconsulting.com">
-							<input type = "hidden" name = "subject" value = "web site contact">
-							<input type = "hidden" name = "fromname" value = "Sefiaconsulting.com">
-							<input type = "hidden" name = "goto" value = "www.sefiaconsulting.com">
+						<form enctype="multipart/form-data" method="post" action="email_form.php" accept-charset="UTF-8" name="contact_form">
 
 							<p>
 								<label for="name">Name *</label>
@@ -550,7 +535,7 @@
 							<div class="one_half">
 								<b>SEFIA CONSULTING</b> <br/>
 								101 Parkshore Drive <br/>
-								Suite 113<br/>
+								Suite 161<br/>
 								Folsom, CA 95630
 							</div>
 							<div class="one_half column_last">
@@ -577,9 +562,9 @@
 
 		<!-- Start Footer -->
 		<footer class="container">
-			<p>SEFIA CONSULTING, LLC &copy; 2014. All Rights Reserved.</p>
-			<br/>
-			<p><a href="./previous/index.html" style="color:#888">old site</a></p>
+			<p>SEFIA CONSULTING, LLC &copy; 2011-2016. All Rights Reserved.</p>
+			<!--br/>
+			<p><a href="./previous/index.html" style="color:#888">old site</a></p-->
 		</footer>
 		<!-- End Footer -->
 
