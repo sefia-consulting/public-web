@@ -14,11 +14,11 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/tipsy.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/flexslider.css" />
 	<link rel="stylesheet" type="text/css" href="javascripts/fancybox/jquery.fancybox-1.3.4.css" />
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Varela+Round' />
-	<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Varela+Round' />
+	<link rel="stylesheet" type="text/css" href="stylesheets/base.css?v=1.0" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/dark.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/media.queries.css" />
-	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/media.queries.css?v=1.0" />
+	<link href='//fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<!-- Javascripts -->
 	<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="javascripts/html5shiv.js"></script>
@@ -27,7 +27,7 @@
 	<script type="text/javascript" src="javascripts/jquery.infieldlabel.js"></script>
 	<script type="text/javascript" src="javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="javascripts/fancybox/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAnFfDbT02iLaLCk4uX6Rtg2cg_wjVcQYU&sensor=false"></script>
 	<script type="text/javascript" src="javascripts/jquery.css-rorate-scale.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.quicksand.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.twitter.js"></script>
@@ -43,23 +43,12 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-27132758-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-      $(function() {
-      	var hash = window.location.hash;
-      	if (hash) hash = hash.substring(1);
-      	if (hash == 'success') $('.success').show();
-      });
-
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-27132758-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </head>
 <body class="linen">
@@ -103,12 +92,12 @@
 				<!-- Start Social Icons -->
 				<aside>
 					<ul class="social">
-						<!--li class="facebook"><a href="">Facebook</a></li-->
-						<li class="twitter"><a href="http://twitter.com/sefiaconsulting" target="_new">Twitter</a></li>
+						<li class="facebook"><a class="social-link" data-social-type="facebook" href="https://www.facebook.com/sefiaconsulting/">Facebook</a></li>
+						<li class="twitter"><a class="social-link" data-social-type="twitter" href="http://twitter.com/sefiaconsulting" target="_new">Twitter</a></li>
 						<!--li class="dribbble"><a href="">Dribbble</a></li-->
-						<!--li class="google"><a href="">Google</a></li-->
+						<li class="google"><a class="social-link" data-social-type="googleplus" href="https://plus.google.com/u/0/113764781026134993555">Google Plus</a></li>
 						<!--li class="flickr"><a href="">Flickr</a></li-->
-						<li class="email"><a href="mailto:info@sefiaconsulting.com" title="info@sefiaconsulting.com">Email</a></li>
+						<li class="email"><a class="social-link" data-social-type="email" href="mailto:info@sefiaconsulting.com?subject=Web Site Contact Request" title="info@sefiaconsulting.com">Email</a></li>
 						<!--li class="blog"><a href="http://sefiaconsulting.blogspot.com/" target="_new" title="Blog">Blog</a></li>
 						<li class="rss"><a href="feed:https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=sefiaconsulting" title="RSS" target="_new">RSS</a></li>
 						<li class="clients"><a href="http://projects.sefiaconsulting.com" target="_new" title="Clients">Clients</a></li-->
@@ -524,7 +513,7 @@
 				<div class="content">
 					
 					<!-- Start Contact Form -->
-					<div id="contact_form">
+					<!--div id="contact_form">
 						<div class="success" id="success">
 							<p>Thanks! We will get back to you shortly.</p>
 						</div>
@@ -549,7 +538,7 @@
 							</p>
 							<input type="submit" class="button white" value="Send Email &#x2192;" />
 						</form>
-					</div>
+					</div-->
 					<!-- End Contact Form -->
 					
 					<!-- Start Google Map -->
@@ -559,12 +548,15 @@
 								<b>SEFIA CONSULTING</b> <br/>
 								101 Parkshore Drive <br/>
 								Suite 161<br/>
-								Folsom, CA 95630
+								Folsom, CA 95630<br/>
+								<a href="tel:19162871312" style="color:#AAA;text-decoration:none;"><span class="icon general">r</span> 916.287.1312</a>
 							</div>
 							<div class="one_half column_last">
-								<a href="tel:19162871312" style="color:#AAA;text-decoration:none;"><span class="icon general">r</span> 916.287.1312</a><br/>
-								<a href="http://twitter.com/sefiaconsulting" target="_new" style="color:#AAA;text-decoration:none;"><span class="icon social">e</span> sefiaconsulting</a> <br/>
-								<a href="mailto:info@sefiaconsulting.com" style="color:#AAA;text-decoration:none;"><span class="icon general">h</span> info@sefiaconsulting.com</a>
+								<a class="social-link" data-social-type="facebook" href="https://www.facebook.com/sefiaconsulting/" target="_new" style="color:#AAA;text-decoration:none;"><span class="icon social">d</span> facebook</a> <br/>
+								<a class="social-link" data-social-type="twitter" href="http://twitter.com/sefiaconsulting" target="_new" style="color:#AAA;text-decoration:none;"><span class="icon social">e</span> twitter</a> <br/>
+								<a class="social-link" data-social-type="linkedin" href="https://www.linkedin.com/company-beta/2426682/" target="_new" style="color:#AAA;text-decoration:none;"><span class="icon social">g</span> linked in</a> <br/>
+								<a class="social-link" data-social-type="googleplus" href="https://plus.google.com/u/0/113764781026134993555" target="_new" style="color:#AAA;text-decoration:none;"><span class="icon social">l</span> google plus</a> <br/>
+								<a class="social-link" data-social-type="twitter" href="mailto:info@sefiaconsulting.com?subject=Web site contact request" style="color:#AAA;text-decoration:none;"><span class="icon general">h</span> email</a>
 							</div>
 						</address>
 						
@@ -593,7 +585,18 @@
 
 	</div>
 	<!-- End Wrapper -->
-
+	<script type="text/javascript">
+		$('.social-link').on('click touch', function() {
+			var socialType = $(this).data('social-type');
+			ga('send', {
+			  hitType: 'event',
+			  eventCategory: 'Social',
+			  eventAction: 'Clicked '+socialType,
+			  eventLabel: 'Clicked '+socialType
+			});
+			console.log('sent '+socialType);
+		});		
+	</script>
 
 </body>
 </html>

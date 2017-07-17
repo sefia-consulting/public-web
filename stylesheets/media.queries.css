@@ -285,6 +285,7 @@
 		width: 315px;
 	}
 	div#map {
-		width: 360px;
+		width: 98%;
+		/*width: 360px;*/
 	}
 }

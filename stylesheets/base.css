@@ -615,8 +615,8 @@ div#contact_form .success {
 	div#contact_form .success p	    { color: #65cf82; }
 /* Map */
 div#map {
-	width: 430px;
-	float: right;
+	/*width: 430px;
+	float: right;*/
 	margin-right: 5px;
 }
 	div#map address {

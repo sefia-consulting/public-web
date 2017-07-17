@@ -116,16 +116,9 @@ mail($email_to, $email_subject, $email_message, $headers);
  
 <!-- include your own success html here -->
  
-<html>
-  <head>
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Varela+Round' />
-	<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/dark.css" />
-    <META http-equiv="refresh" content="0;URL=/home.html#success">
-  </head>
-  <body>
-  </body>
-</html>
+{
+  success:true
+}
  
 <?php
  
