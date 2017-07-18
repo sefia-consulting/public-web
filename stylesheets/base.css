@@ -351,7 +351,7 @@ div.skills {
 	}
 div.tweets {
 	clear: both;
-	padding: 20px 25px 15px 25px;
+	padding: 12px;
 	position: relative;
 }
 	div.tweets span.icon {
@@ -972,7 +972,7 @@ ul.social {
 			height: 24px;
 			display: block;
 			text-indent: -99999px;
-			background: url('../images/light-social.png') no-repeat top left;
+			background: url('../images/light-social.png?v=1.1') no-repeat top left;
 		}
 		ul.social li.facebook a 				{ background-position: 0px 0px; }
 			ul.social li.facebook a:hover { background-position: -24px 0px; }
@@ -988,10 +988,11 @@ ul.social {
 			ul.social li.rss a:hover 			{ background-position: -24px -120px; }
 		ul.social li.email a 						{ background-position: 0px -144px; }
 			ul.social li.email a:hover 		{ background-position: -24px -144px; }
-		ul.social li.blog a 						{ background-position: 0px -168px; }
-			ul.social li.blog a:hover 		{ background-position: -24px -168px; }
-		ul.social li.clients a 						{ background-position: 0px -192px; }
-			ul.social li.clients a:hover 		{ background-position: -24px -192px; }
+		ul.social li.linkedin a 						{ background-position: 0px -168px; }
+			ul.social li.linkedin a:hover 		{ background-position: -24px -168px; }
+		ul.social li.blogger a 						{ background-position: 0px -192px; }
+			ul.social li.blogger a:hover 		{ background-position: -24px -192px; }
+
 div.toggle_list {
 	margin-bottom: 25px;
 }

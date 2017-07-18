@@ -1,1 +1,164 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(7($){$.1C.B=7(o){8 s=$.1a({h:j,C:j,1b:2C,M:j,H:j,l:3,1c:j,u:1,1D:1E,1d:j,1e:j,I:j,1F:"i 2D,",1G:"i",1H:"i 2E",1I:"i 2F 2G",1J:"i 2H 2I 2J",V:j,1f:j,1g:"W.1h",X:"2K.W.1h",1i:"1j.W.1h",J:"{Y}{1K}{N}{m}",1L:7(1M,1N){5 1N["O"]-1M["O"]},1O:7(B){5 1E}},o);8 1k=/\\b((?:[a-z][\\w-]+:(?:\\/{1,3}|[a-1l-9%])|2L\\d{0,3}[.]|[a-1l-9.\\-]+[.][a-z]{2,4}\\/)(?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+(?:\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\)|[^\\s`!()\\[\\]{};:\'".,<>?«»“”‘’]))/K;7 t(J,Z){6(1m J==="1P"){8 11=J;2M(8 1n 2N Z){8 1o=Z[1n];11=11.1p(1Q 2O(\'{\'+1n+\'}\',\'g\'),1o===j?\'\':1o)}5 11}f 5 J(Z)}$.1a({B:{t:t}});7 E(1R,1S){5 7(){8 1q=[];1r.1T(7(){1q.2P(1r.1p(1R,1S))});5 $(1q)}}$.1C.1a({1U:E(1k,7(v){8 1V=(/^[a-z]+:/i).2Q(v)?v:"P://"+v;5"<a x=\\""+1V+"\\">"+v+"</a>"}),1W:E(/@(\\w+)/K,"@<a x=\\"P://"+s.1g+"/$1\\">$1</a>"),1X:E(/(?:^| )[\\#]+([\\w\\2R-\\2S\\2T-\\2U\\2V-\\2W\\2X-\\2Y]+)/K,\' <a x="P://\'+s.1i+\'/1j?q=&2Z=$1&30=31\'+((s.h&&s.h.12==1)?\'&1s=\'+s.h.N("%32%2B"):\'\')+\'">#$1</a>\'),1Y:E(/\\b(1Z)\\b/K,\'<n c="1Z">$1</n>\'),20:E(/\\b(21)\\b/K,\'<n c="21">$1</n>\'),22:E(/(&33;)+[3]/K,"<23 c=\'34\'>&#35;</23>")});7 25(26){5 27.36(26.1p(/^([a-z]{3})( [a-z]{3} \\d\\d?)(.*)( \\d{4})$/i,\'$1,$2$4$3\'))}7 28(29){8 2a=(2b.12>1)?2b[1]:1Q 27();8 k=13((2a.37()-29)/2c,10);8 r=\'\';6(k<y){r=k+\' 38 F\'}f 6(k<39){r=\'a 3a F\'}f 6(k<(45*y)){r=(13(k/y,10)).1t()+\' 3b F\'}f 6(k<(2*y*y)){r=\'3c 3d F\'}f 6(k<(24*y*y)){r=\'\'+(13(k/3e,10)).1t()+\' 3f F\'}f 6(k<(48*y*y)){r=\'a 3g F\'}f{r=(13(k/3h,10)).1t()+\' 3i F\'}5\'3j \'+r}7 2d(m){6(m.v(/^(@([A-3k-1l-9-3l]+)) .*/i)){5 s.1I}f 6(m.v(1k)){5 s.1J}f 6(m.v(/^((\\w+3m)|3n) .*/3o)){5 s.1G}f 6(m.v(/^(\\w*3p) .*/i)){5 s.1H}f{5 s.1F}}7 2e(){8 Q=(\'2f:\'==3q.3r.3s?\'2f:\':\'P:\');8 l=(s.1c===j)?s.l:s.1c;6(s.C){5 Q+"//"+s.X+"/1/"+s.h[0]+"/3t/"+s.C+"/2g.14?u="+s.u+"&3u="+l+"&15=?"}f 6(s.1b){5 Q+"//"+s.X+"/1b/"+s.h[0]+".14?u="+s.u+"&l="+l+"&15=?"}f 6(s.M===j&&s.h.12==1){5 Q+\'//\'+s.X+\'/1/2g/3v.14?D=\'+s.h[0]+\'&l=\'+l+(s.1D?\'&3w=1\':\'\')+\'&u=\'+s.u+\'&15=?\'}f{8 M=(s.M||\'1s:\'+s.h.N(\' 3x 1s:\'));5 Q+\'//\'+s.1i+\'/1j.14?&q=\'+3y(M)+\'&3z=\'+l+\'&u=\'+s.u+\'&15=?\'}}7 2h(e){8 o={};o.e=e;o.2i=e.2i;o.D=e.3A||e.16.D;o.H=s.H;o.2j=e.2k||e.16.2k;o.R=1m(e.1u)!=\'3B\';o.O=25(e.3C);o.I=s.I=="3D"?2d(e.m):s.I;o.G=e.3E;o.S="P://"+s.1g+"/";o.17=o.S+o.D;o.2l=o.17+"/3F/"+o.G;o.2m=o.S+"1v/B?3G="+o.G;o.2n=o.S+"1v/R?G="+o.G;o.2o=o.S+"1v/2p?G="+o.G;o.2q=o.R&&e.1u.16.D;o.2r=28(o.O);o.2s=o.R?(\'3H @\'+o.2q+\' \'+e.1u.m):e.m;o.1w=$([o.2s]).1U().1W().1X()[0];o.2t=$([o.1w]).22().1Y().20()[0];o.16=t(\'<a c="3I" x="{17}">{D}</a>\',o);o.N=s.I?t(\' <n c="3J">{I}</n> \',o):\' \';o.Y=o.H?t(\'<a c="3K" x="{17}"><3L 3M="{2j}" 3N="{H}" 3O="{H}" 3P="{D}\\\'s Y" 2u="{D}\\\'s Y" 3Q="0"/></a>\',o):\'\';o.1K=t(\'<n c="O"><a x="{2l}" 2u="3R B 3S W">{2r}</a></n>\',o);o.m=t(\'<n c="1w">{2t}</n>\',o);o.3T=t(\'<a c="1x 3U" x="{2m}">3V</a>\',o);o.3W=t(\'<a c="1x 3X" x="{2n}">R</a>\',o);o.3Y=t(\'<a c="1x 3Z" x="{2o}">2p</a>\',o);5 o}5 1r.1T(7(i,L){8 C=$(\'<40 c="41">\').42(L);8 2v=\'<p c="43">\'+s.1d+\'</p>\';8 2w=\'<p c="44">\'+s.1e+\'</p>\';8 18=$(\'<p c="18">\'+s.V+\'</p>\');6(s.h&&1m(s.h)=="1P"){s.h=[s.h]}6(s.V)$(L).2x(18);$(L).46("B:1y",7(){$.47(2e(),7(1z){6(s.V)18.49();6(s.1d)C.4a(2v);C.2y();8 T=$.2z(1z.4b||1z,2h);T=$.4c(T,s.1O).4d(s.1L).4e(0,s.l);C.2x($.2z(T,7(o){5"<U>"+t(s.J,o)+"</U>"}).N(\'\')).1A(\'U:4f\').1B(\'4g\').2A().1A(\'U:4h\').1B(\'4i\').2A().1A(\'U:4j\').1B(\'4k\');6(s.1e)C.4l(2w);$(L).19("4m").19((T.12===0?"2y":"4n"));6(s.1f){4o.4p(7(){$(L).19("B:1y")},2c*s.1f)}})}).19("B:1y")})}})(4q);',62,275,'|||||return|if|function|var||||class||item|else||username||null|delta|count|text|span|||||||page|match||href|60|||tweet|list|screen_name|replacer|ago|tweet_id|avatar_size|join_text|template|gi|widget|query|join|tweet_time|http|proto|retweet|twitter_base|tweets|li|loading_text|twitter|twitter_api_url|avatar|info||result|length|parseInt|json|callback|user|user_url|loading|trigger|extend|favorites|fetch|intro_text|outro_text|refresh_interval|twitter_url|com|twitter_search_url|search|url_regexp|z0|typeof|key|val|replace|returning|this|from|toString|retweeted_status|intent|tweet_text|tweet_action|load|data|children|addClass|fn|retweets|true|auto_join_text_default|auto_join_text_ed|auto_join_text_ing|auto_join_text_reply|auto_join_text_url|time|comparator|tweet1|tweet2|filter|string|new|regex|replacement|each|linkUrl|url|linkUser|linkHash|capAwesome|awesome|capEpic|epic|makeHeart|tt||parse_date|date_str|Date|relative_time|date|relative_to|arguments|1000|build_auto_join_text|build_api_url|https|statuses|extract_template_data|source|avatar_url|profile_image_url|tweet_url|reply_url|retweet_url|favorite_url|favorite|retweeted_screen_name|tweet_relative_time|tweet_raw_text|tweet_text_fancy|title|intro|outro|append|empty|map|end||false|said|am|replied|to|was|looking|at|api|www|for|in|RegExp|push|test|u00c0|u00d6|u00d8|u00f6|u00f8|u00ff|u0600|u06ff|tag|lang|all|2BOR|lt|heart|x2665|parse|getTime|seconds|120|minute|minutes|an|hour|3600|hours|day|86400|days|about|Za|_|ed|just|im|ing|document|location|protocol|lists|per_page|user_timeline|include_rts|OR|encodeURIComponent|rpp|from_user|undefined|created_at|auto|id_str|status|in_reply_to|RT|tweet_user|tweet_join|tweet_avatar|img|src|height|width|alt|border|view|on|reply_action|tweet_reply|reply|retweet_action|tweet_retweet|favorite_action|tweet_favorite|ul|tweet_list|appendTo|tweet_intro|tweet_outro||bind|getJSON||remove|before|results|grep|sort|slice|first|tweet_first|odd|tweet_even|even|tweet_odd|after|loaded|full|window|setTimeout|jQuery'.split('|'),0,{}))
+(function($) {
+	/*
+		jquery.twitter.js v1.6
+		Last updated: 16 October 2012
+
+		Created by Damien du Toit
+		http://coda.co.za/content/projects/jquery.twitter/
+
+		Licensed under a Creative Commons Attribution-Non-Commercial 3.0 Unported License
+		http://creativecommons.org/licenses/by-nc/3.0/
+	*/
+
+	$.fn.getTwitter = function(options) {
+
+		$.fn.getTwitter.defaults = {
+			userName: 'sefiaconsulting',
+			numTweets: 5,
+			loaderText: "Loading tweets...",
+			slideIn: true,
+			slideDuration: 750,
+			showHeading: true,
+			headingText: "Latest Tweets",
+			showProfileLink: true,
+			showTimestamp: true,
+			includeRetweets: false,
+			excludeReplies: true
+		};
+
+		var o = $.extend({}, $.fn.getTwitter.defaults, options);
+
+		return this.each(function() {
+			var c = $(this);
+
+			// hide container element, remove alternative content, and add class
+			c.hide().empty().addClass("twitted");
+
+			// add heading to container element
+			if (o.showHeading) {
+				c.append("<h2>"+o.headingText+"</h2>");
+			}
+
+			// add twitter list to container element
+			var twitterListHTML = "<ul id=\"twitter_update_list\"></ul>";
+			c.append(twitterListHTML);
+
+			var tl = $("#twitter_update_list");
+
+			// hide twitter list
+			tl.hide();
+
+			// add preLoader to container element
+			var preLoaderHTML = $("<p class=\"preLoader\">"+o.loaderText+"</p>");
+			c.append(preLoaderHTML);
+
+			// add Twitter profile link to container element
+			if (o.showProfileLink) {
+				var profileLinkHTML = "<p class=\"profileLink\"><a href=\"https://twitter.com/"+o.userName+"\">https://twitter.com/"+o.userName+"</a></p>";
+				c.append(profileLinkHTML);
+			}
+
+			// show container element
+			c.show();
+
+			// request (o.numTweets + 20) to avoid not having enough tweets if includeRetweets = false and/or excludeReplies = true
+			window.jsonTwitterFeed = "https://api.twitter.com/1/statuses/user_timeline.json?include_rts="+o.includeRetweets+"&excludeReplies="+o.excludeReplies+"&screen_name="+o.userName+"&count="+(o.numTweets + 20);
+
+			$.ajax({
+				url: jsonTwitterFeed,
+				data: {},
+				dataType: "jsonp",
+				callbackParameter: "callback",
+				timeout: 50000,
+				success: function(data) {
+					window.count = 0;
+
+					$.each(data, function(key, val) {
+						var tweetHTML = "<li><span>" + replaceURLWithHTMLLinks(val.text) + "</span>";
+
+						if (o.showTimestamp) tweetHTML += " <a style=\"font-size:85%\" href=\"https://twitter.com/" + o.userName + "/statuses/" + val.id_str + "\">" + relative_time(val.created_at) + "</a>";
+					
+						tweetHTML += "</li>";
+
+						$("#twitter_update_list").append(tweetHTML);
+
+						count++;
+
+						if (count == o.numTweets) {
+							// remove preLoader from container element
+							$(preLoaderHTML).remove();
+
+							// show twitter list
+							if (o.slideIn) {
+								// a fix for the jQuery slide effect
+								// Hat-tip: http://blog.pengoworks.com/index.cfm/2009/4/21/Fixing-jQuerys-slideDown-effect-ie-Jumpy-Animation
+								var tlHeight = tl.data("originalHeight");
+				
+								// get the original height
+								if (!tlHeight) {
+									tlHeight = tl.show().height();
+									tl.data("originalHeight", tlHeight);
+									tl.hide().css({height: 0});
+								}
+
+								tl.show().animate({height: tlHeight}, o.slideDuration);
+							}
+							else {
+								tl.show();
+							}
+				
+							// add unique class to first list item
+							tl.find("li:first").addClass("firstTweet");
+				
+							// add unique class to last list item
+							tl.find("li:last").addClass("lastTweet");
+
+							return false;
+						}
+					});
+				},
+				error: function(XHR, textStatus, errorThrown) {
+					//alert("Error: " + textStatus);
+					//alert("Error: " + errorThrown);
+				}
+			});
+		});
+
+		function replaceURLWithHTMLLinks(text) {
+			var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+			return text.replace(exp, "<a href=\"$1\">$1</a>");
+		}
+
+		// sourced from https://twitter.com/javascripts/blogger.js
+		function relative_time(time_value) {
+			var values = time_value.split(" ");
+			time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+			var parsed_date = Date.parse(time_value);
+			var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+			var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+			delta = delta + (relative_to.getTimezoneOffset() * 60);
+			
+			if (delta < 60) {
+				return "less than a minute ago";
+			}
+			else if (delta < 120) {
+				return "about a minute ago";
+			}
+			else if (delta < (60*60)) {
+				return (parseInt(delta / 60)).toString() + " minutes ago";
+			}
+			else if (delta < (120*60)) {
+				return "about an hour ago";
+			}
+			else if (delta < (24*60*60)) {
+				return "about " + (parseInt(delta / 3600)).toString() + " hours ago";
+			}
+			else if (delta < (48*60*60)) {
+				return "1 day ago";
+			}
+			else {
+				return (parseInt(delta / 86400)).toString() + " days ago";
+			}
+		}
+	};
+})(jQuery);

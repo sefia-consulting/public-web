@@ -73,6 +73,7 @@ $(document).ready(function() {
 	});
 	
 	// Twitter widget
+/*
 	$("#twitter_stream").tweet({
 		username: "sefiaconsulting", // Customize your twitter username here
 		count: 10,
@@ -99,7 +100,7 @@ $(document).ready(function() {
 			controlsContainer: ".flexslider-container"
 		});
 	})
-
+*/
 	//Google Maps
 		if(typeof google.maps.LatLng !== "undefined"){
 			$(".map_canvas").each(function(){

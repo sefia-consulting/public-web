@@ -89,10 +89,10 @@ div.progress_bar {
 	border-color: #444;
 }
 /* Lists */
-ul.social li a { background: url('../images/dark-social.png') no-repeat top left; }
+ul.social li a { background: url('../images/dark-social.png?v=1.0') no-repeat top left; }
 div.toggle_list ul li div.title {
 	background: #2d2d2d;
-	border-color: #383838;
+	border-color: #383838;?v=1.0
 }
 	div.toggle_list ul li div.title h3 { color: #fff; }
 	div.toggle_list ul li div.content {
