@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefia Consulting | Intelligence, Designed.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        appleDark: '#0a0a0a',
+                        appleGray: '#1d1d1f',
+                        appleLight: '#f5f5f7',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="clients.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white w-full relative">
+
+    <div class="mesh-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-white">
+                <a href="#home" class="flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    SEFIA<span class="text-gray-400 font-light">CONSULTING</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="#philosophy" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#augmentation" class="hover:text-white transition-colors">Augmentation</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#clients" class="hover:text-white transition-colors">Clients</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 w-full flex flex-col px-6 py-4 space-y-4 shadow-2xl">
+            <a href="#philosophy" class="text-gray-300 hover:text-white transition-colors mobile-link text-lg">Solutions</a>
+            <a href="#augmentation" class="text-gray-300 hover:text-white transition-colors mobile-link text-lg">Augmentation</a>
+            <a href="#expertise" class="text-gray-300 hover:text-white transition-colors mobile-link text-lg">Expertise</a>
+            <a href="#clients" class="text-gray-300 hover:text-white transition-colors mobile-link text-lg">Clients</a>
+            <a href="#contact" class="text-gray-300 hover:text-white transition-colors mobile-link text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home"class="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-screen"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-appleDark"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto hero-reveal">
+            <div class="mb-6 text-gray-300">
+                <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+            </div>
+            <p class="text-blue-400 font-semibold tracking-widest uppercase text-sm mb-6">Digital Engineering & Design</p>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-8 text-gradient leading-tight">
+                Frictionless <br />Innovation.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light max-w-3xl mx-auto leading-relaxed mb-12">
+                Custom software and AI that actually make sense. No jargon, no tech nightmares, no bloated bills. Just your vision, perfectly executed.
+            </p>
+            </div>
+    </section>
+
+    <section id="philosophy" class="py-32 px-6 bg-appleDark relative z-10 overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-[-10%] right-[-5%] w-[40%] h-[60%] bg-indigo-600/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-[40%] h-[60%] bg-blue-600/10 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center apple-reveal relative z-10">
+            <div class="text-indigo-500 mb-6 icon-spin inline-block">
+                <svg class="w-14 h-14 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 section-title-elegant tracking-tight">Soup to Nuts, <br/><span class="text-gray-500">Reimagined.</span></h2>
+            <p class="text-lg md:text-xl text-gray-400 leading-relaxed">
+                By combining agile workflows, deep experience, and smart AI, we build software that drops flawlessly into your ecosystem—whether it's an enterprise cloud or a mobile screen. The result? A product that takes your vision further than you imagined. Stop figuring out how to build it. 
+                <br/><strong class="text-white">We already know how.</strong>
+            </p>
+        </div>
+    </section>
+
+    <section id="augmentation" class="py-32 px-6 bg-appleDark relative z-10 overflow-hidden border-t border-white/10">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-[20%] left-[10%] w-[30%] h-[50%] bg-purple-600/5 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-[10%] right-[10%] w-[40%] h-[40%] bg-blue-500/5 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center apple-reveal relative z-10">
+            <div class="text-purple-400 mb-6 icon-boomerang inline-block">
+                <svg class="w-14 h-14 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                </svg>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 section-title-elegant tracking-tight">The Ultimate <br/><span class="text-gray-500">Force Multiplier.</span></h2>
+            <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-6">
+                Don't take on permanent overhead for a short-term project. We drop in the exact talent you need, exactly when you need it—from plugging a single missing skill to running a full hybrid squad. Plus, we never build and bail. We cross-train your crew, transfer our knowledge, and will even help you hire our replacements. It's how you boost your capacity without the long-term commitment.
+            </p>
+        </div>
+    </section>
+
+    <section id="expertise" class="horizontal-scroll-container overflow-hidden bg-appleDark">
+        <div class="pin-wrap">
+            
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-blue-500 mb-4 icon-drop inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">Solution Design</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Strategic blueprints that bridge the gap between complex business challenges and elegant technical realities. 
+                        We perform in-depth feasibility studies and define architecture that satisfies all end-user requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-emerald-500 mb-4 icon-slide-left inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">Custom Software</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Bespoke architectures crafted with precision. Using modern, proven software methodologies, we deliver robust, 
+                        scalable, and maintainable code customized perfectly to fit your enterprise ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-purple-500 mb-4 icon-scale-up inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">AI Solutions</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Harness the power of machine learning and generative AI. We engineer intelligent systems that automate complex 
+                        processes, unlock unprecedented efficiency, and deliver transformative data insights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-pink-500 mb-4 icon-flip inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">UI Design</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Intuitive, human-centric interfaces. Our UI designers craft rich, efficient, and visually 
+                        stunning experiences that captivate your users and elevate your brand's digital presence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-orange-500 mb-4 icon-rotate-in inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">Technical PM</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Agile orchestration. We facilitate collaboration and communication, navigating complexity to 
+                        deliver your interactive and iterative projects on time, on budget, and beyond expectations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-panel group px-4">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1633412802994-5c058f151b66?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center text-center px-6 w-full max-w-3xl h-[450px] glass p-12 rounded-3xl">
+                    <div class="text-red-500 mb-4 icon-slide-right inline-block">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title-elegant tracking-tight">QA / QC</h2>
+                    <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                        Uncompromising quality. Through rigorous verification and validation protocols, we 
+                        ensure your software satisfies stakeholder needs and performs flawlessly under any condition.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+ 
+    <section id="clients" class="bg-appleDark py-24 text-center border-t border-white/10">
+        <div class="max-w-7xl mx-auto apple-reveal">
+            <div class="text-blue-400 mb-4 inline-block icon-3d-flip">
+                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Our Clients</h2>
+            <p class="text-lg md:text-xl px-12 text-gray-600 font-light leading-relaxed max-w-3xl mx-auto mb-10">
+                Proudly partnering with leading brands across the technology, consumer, business, and industrial sectors.
+            </p>
+            <div class="logos">
+                <div class="logos-slide">
+                    
+                    <div class="client-logo">
+                        <img src="images/AFC.png" alt="AFC Industries">
+                        <span class="tooltip">Supply-chain and inventory management solutions partner to OEMs</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/AnordMardix.png" alt="Anord Mardix">
+                        <span class="tooltip">Power distribution and protection equipment for data centers and industrial applications</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Aperture.png" alt="Aperture Pet & Life">
+                        <span class="tooltip">Online retailer, manufacturer and distributor of products and solutions for the saltwater and freshwater enthusiast</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/AppliedAdhesives.png" alt="Applied Adhesives">
+                        <span class="tooltip">Value-added distributor of custom adhesive solutions as well as other specialty adhesive parts and equipment</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/ASI.webp" alt="Author Solutions">
+                        <span class="tooltip">Independent publishing company</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Bearcom.webp" alt="BearCom">
+                        <span class="tooltip">Provider & system integrator of push-to-talk wireless voice, video, & data solutions in North America</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/BVM.webp" alt="Best Version Media">
+                        <span class="tooltip">Advertising solutions company connecting local businesses to customers with innovative print and digital solutions</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Burke.png" alt="Burke">
+                        <span class="tooltip">Provider of commercial play, outdoor recreational solutions</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Centicore.png" alt="Centicore Holdings">
+                        <span class="tooltip">Platform to invest in and build leading DTC brands across a variety of lifestyle segments</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Clarus.webp" alt="Clarus Glassboards">
+                        <span class="tooltip">Manufacturer of branded glass boards</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Cogency.png" alt="Cogency Global">
+                        <span class="tooltip">Provider of outsourced corporate compliance and transaction related services</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/CreativeDrive.webp" alt="CreativeDrive">
+                        <span class="tooltip">Digital content for e-commerce applications</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/DatAvail.webp" alt="Datavail">
+                        <span class="tooltip">Pure-play provider of remote database administration</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/EAH.webp" alt="Enthusiast Auto Holdings">
+                        <span class="tooltip">Direct-to-enthusiast, digitally native platform that invests in and helps operate several of the most innovative brands in the performance automotive industry.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/EDI.webp" alt="Extrusion Dies Industries">
+                        <span class="tooltip">Designer and manufacturer of extrusion dies</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/FCG.webp" alt="Flow Control Group">
+                        <span class="tooltip">Distributor of flow control and fluid handling equipment and products</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/JohnsonPlastics.png" alt="Johnson Plastics Plus">
+                        <span class="tooltip">Johnson Plastics Plus (jpplus.com) is a leading distributor of engraving materials, sublimation products, and sign-making supplies</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Lectric.png" alt="Lectric Ebikes">
+                        <span class="tooltip">Building accessible electric mobility solutions to serve all ages, trip types, and terrains</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/LeftLaneAuto.png" alt="Left Lane Auto, LLC">
+                        <span class="tooltip">National Tire Retail & Automotive Service Platform</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Maxcess.webp" alt="Maxcess">
+                        <span class="tooltip">Web handling components and specialized converting modules</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/MorpheusData.png" alt="Morpheus Data">
+                        <span class="tooltip">Morpheus Data provides a comprehensive hybrid cloud management and application infrastructure automation platform designed to unify IT, streamline DevOps, and manage costs</span>
+                    </div>
+
+                    <div class="client-logo">
+                        <img src="images/MSESupplies.png" alt="MSE Supplies, LLC">
+                        <span class="tooltip">Supplier of advanced materials, laboratory equipment, lab supplies, and analytical services for both research and production environments.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Nefco.png" alt="NEFCO">
+                        <span class="tooltip">Family owned and operated value-added distributor of specialty construction products and tools, providing job site delivery and other services to professional contractors.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/OneDistribution.webp" alt="One Distribution">
+                        <span class="tooltip">Designer, marketer, and distributor of fresh, independent footwear and apparel brands with authentic skate heritage.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/PaulasChoice.webp" alt="Paula's Choice">
+                        <span class="tooltip">Innovative skin care and cosmetics company</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/PDI.webp" alt="Power Distribution">
+                        <span class="tooltip">An independent company in power distribution, monitoring and equipment</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Perennials.png" alt="Perennials and Sutherland">
+                        <span class="tooltip">Manufacturer of performance fabrics, rugs and outdoor furniture</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/PermieterSolutionsGroup.webp" alt="Perimeter Solutions Group, LLC">
+                        <span class="tooltip">Perimeter Solutions Group is a leading commercial provider of integrated perimeter protection solutions.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/PinkLily.png" alt="Perimeter Solutions Group, LLC">
+                        <span class="tooltip">Pink Lily is a fast-growing, Kentucky-based online women’s boutique specializing in trendy, feminine apparel, accessories, and shoes, featuring on-trend designs, vibrant prints, and a strong Southern aesthetic.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Registrar.webp" alt="Registrar Corp">
+                        <span class="tooltip">Provider of U.S. Food and Drug Administration compliance software and services</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Revamp.png" alt="ReVamp Companies">
+                        <span class="tooltip">A leading national residential concrete coatings and vinyl fencing installation platform.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Reveal.webp" alt="Reveal Cellular Camera">
+                        <span class="tooltip">Providing hunters and outdoor sports enthusiasts with filming related products and hunting cameras.</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Ridgeline.webp" alt="Ridgeline Roofing & Restoration">
+                        <span class="tooltip">Roofing and restoration company specializing in residential re-roofing services</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Rowmark.png" alt="Rowmark">
+                        <span class="tooltip">Manufacturer of highly engineered extruded plastic sheet used for engraving and specialty applications</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/SafetyProducts.png" alt="Safety Products Global">
+                        <span class="tooltip">Manufacturer of safety cutting tools and products</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/SoloStove.webp" alt="Solo Stove">
+                        <span class="tooltip">Stainless Steel wood-burning stoves and fire pits designed with efficient airflow. Portable and durable, designed for adventure</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Spectrio.webp" alt="Spectrio">
+                        <span class="tooltip">Provider of customer engagement solutions</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Spireon.webp" alt="Spireon">
+                        <span class="tooltip">GPS-powered mobile resource management solutions</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Trademark.png" alt="Trademark Global">
+                        <span class="tooltip">Curator and supplier of a 3K+ product portfolio to Global 100 internet retailers</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/Tyden.webp" alt="Tyden Group">
+                        <span class="tooltip">Security, identification, traceability & utility products</span>
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/VinylOutlet.png" alt="The Vinyl Outlet">
+                        <span class="tooltip">The Vinyl Outlet is a premier designer and installer of high-quality vinyl fences, decks, and railings in Western and Central New York (Buffalo, Rochester, Syracuse).</span>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-appleGray py-24 px-6 text-center border-t border-white/10 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none flex justify-center items-center">
+            <div class="w-[800px] h-[800px] bg-teal-500/5 rounded-full blur-[150px]"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto apple-reveal relative z-10">
+            <div class="text-teal-400 mb-6 inline-block icon-fly-in">
+                <svg class="w-14 h-14 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 tracking-tight section-title-elegant">Ready to Architect <br>Your Next Breakthrough?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Whether it's a multi-site enterprise, cloud infrastructure, or a mobile ecosystem, Sefia Consulting provides the solution, support, knowledge transfer, and maintenance to ensure lasting success.</p>
+            <a href="mailto:info@sefiaconsulting.com" class="inline-block bg-white text-black font-semibold px-10 py-4 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">
+                Start a Conversation
+            </a>
+            <p class="mt-20 text-sm text-gray-600"><span class="text-gray-200">Founded in 2010</span><br/>&copy; 2026 Sefia Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="client-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-appleGray w-full max-w-md rounded-2xl p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl border border-white/10 text-center">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="modal-img-container" class="bg-white rounded-lg p-6 mb-6 flex justify-center items-center h-32">
+                <img id="modal-img" src="" alt="Client Logo" class="max-h-full max-w-full grayscale-0">
+            </div>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4 hidden"></h3>
+            <p id="modal-desc" class="text-gray-300 text-lg leading-relaxed"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="clients.js"></script>
+</body>
+</html>

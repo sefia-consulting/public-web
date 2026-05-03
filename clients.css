@@ -1,0 +1,58 @@
+/* styles/clients.css */
+#clients {
+    position: relative;
+    background-color: #ffffff;
+}
+
+#clients h2 {
+    color: rgb(29 29 31);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    background-color: #ffffff;
+    overflow: hidden; /* Added to clip the horizontal slide overflow */
+}
+
+.logos::before,
+.logos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logos-slide {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    /* CSS animation removed to prevent Safari scroll-jump bugs. Now driven by GSAP */
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 40px;
+}
+
+.client-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer; /* Added to signify it's clickable on desktop */
+}
+
+/* Tooltip visually hidden, used only as a data container for the modal */
+.client-logo .tooltip {
+    display: none;
+}
