@@ -2,37 +2,32 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // 0. Home Section Load & Scrub Animation
+const heroReveal = document.querySelector('.hero-reveal');
 const heroElements = document.querySelectorAll('.hero-reveal > *');
-if (heroElements.length > 0) {
-    
-    // Short timeout allows browser to jump to anchor links before we check scroll position
-    setTimeout(() => {
-        // Initial load stagger with a sophisticated blur effect
-        // Only run if we load at the top to prevent conflicts when loading via anchor links (e.g. /#clients)
-        if (window.scrollY < 50) {
-            gsap.from(heroElements, { 
-                y: (i) => i === 0 ? -60 : 60, 
-                opacity: 0, 
-                filter: 'blur(10px)', 
-                duration: 1.5, 
-                stagger: 0.2, 
-                ease: "power3.out"
-            });
-        }
-    }, 50);
 
-    // Scrub away smoothly on scroll down. 
-    // Using gsap.fromTo() guarantees the exact starting state, fixing Safari/iOS scroll restoration bugs
-    // where gsap.to() might record incorrect base CSS values if initialized mid-scroll.
-    gsap.fromTo(heroElements, 
+if (heroReveal && heroElements.length > 0) {
+    
+    // Abstracted function to run the entrance animation cleanly
+    function playHeroEntrance() {
+        gsap.fromTo(heroElements, 
+            { y: (i) => i === 0 ? -60 : 60, opacity: 0, filter: 'blur(10px)' }, 
+            { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.5, stagger: 0.2, ease: "power3.out", overwrite: "auto" }
+        );
+    }
+
+    // Play entrance animation on initial load
+    setTimeout(playHeroEntrance, 50);
+
+    // Scrub away the entire wrapper smoothly on scroll down.
+    // By scrubbing the parent (.hero-reveal) while applying the entrance animation to its children,
+    // we eliminate GSAP overwrite conflicts and guarantee iOS correctly calculates the scroll restoration state.
+    gsap.fromTo(heroReveal, 
         { y: 0, opacity: 1, filter: 'blur(0px)' },
         {
-            y: -80,
+            y: -100,
             opacity: 0,
             filter: 'blur(5px)',
-            stagger: 0.05,
             ease: "none",
-            immediateRender: false,
             scrollTrigger: {
                 trigger: "#home",
                 start: "top top",
@@ -259,15 +254,10 @@ if (navLogo) {
         if (heroElements.length > 0) {
             // Re-trigger the smooth entrance after a short delay to allow smooth scrolling to the top to complete
             setTimeout(() => {
-                gsap.from(heroElements, { 
-                    y: (i) => i === 0 ? -60 : 60, 
-                    opacity: 0, 
-                    filter: 'blur(10px)', 
-                    duration: 1.5, 
-                    stagger: 0.2, 
-                    ease: "power3.out", 
-                    overwrite: "auto" // Cleanly interrupts any active scrub motion without deleting the ScrollTrigger completely
-                });
+                gsap.fromTo(heroElements, 
+                    { y: (i) => i === 0 ? -60 : 60, opacity: 0, filter: 'blur(10px)' }, 
+                    { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.5, stagger: 0.2, ease: "power3.out", overwrite: "auto" }
+                );
             }, 600); 
         }
     });
@@ -289,3 +279,39 @@ if (window.location.hash) {
         history.replaceState(null, null, window.location.pathname + window.location.search);
     }, 100);
 }
+
+// 8. Background Parallax Scrolling
+// Vertical Parallax for standard layout sections
+gsap.utils.toArray('.vertical-parallax').forEach(bg => {
+    gsap.fromTo(bg, 
+        { yPercent: -15 }, 
+        {
+            yPercent: 15,
+            ease: "none",
+            scrollTrigger: {
+                trigger: bg.parentElement,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        }
+    );
+});
+
+// Horizontal Parallax for the horizontally scrolling service panels
+gsap.utils.toArray('.horizontal-parallax').forEach(bg => {
+    gsap.fromTo(bg, 
+        { xPercent: -15 }, 
+        {
+            xPercent: 15,
+            ease: "none",
+            scrollTrigger: {
+                trigger: bg.parentElement,
+                containerAnimation: scrollTween, // Binds the parallax to the horizontal container motion
+                start: "left right",
+                end: "right left",
+                scrub: true
+            }
+        }
+    );
+});
