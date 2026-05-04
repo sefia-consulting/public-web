@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         marqueeTween = gsap.to(slides, {
             xPercent: -100,
             repeat: -1,
-            duration: 40,
+            duration: 60,
             ease: "none"
         });
 
