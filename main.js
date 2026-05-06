@@ -121,6 +121,7 @@ let scrollTween = gsap.to(".pin-wrap", {
         trigger: horizontalSection,
         pin: true,
         scrub: 1, // Smooth scrubbing
+        anticipatePin: 1, // Eliminates the jitter by anticipating the pin before the scroll hits the exact pixel
         invalidateOnRefresh: true, // Recalculates on window resize
         // The 'end' value controls how long the user must scroll vertically to finish the horizontal animation.
         // 4000px provides a smooth, unhurried reading pace for 6 panels.
